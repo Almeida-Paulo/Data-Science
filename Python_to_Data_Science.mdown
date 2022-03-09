@@ -93,13 +93,13 @@ print(data.head())
 
 ### 1. Criar
 
-#### utiliza-se o operador "=" (igual) para atribuir valor a uma variável.
+##### utiliza-se o operador "=" (igual) para atribuir valor a uma variável.
 
 #### Ex: 
 ~~~Python
 data = pandas.read_csv ('Projeto_DS_1/datasets/kc_house_data.csv')
 ~~~
-###### Leu o arquivo e guardou-o na variável "data".
+###### Note: Leu o arquivo e guardou-o na variável "data".
 
 #### Ex2: criando colunas na planilha de dados do arquivo
 ~~~Python
@@ -111,13 +111,13 @@ data['Idade'] = 27
 ~~~Python
 data['Data_de_Nascimento'] = pandas.to_datetime('1995-10-25')
 ~~~
-###### pode-se converter de object para date depois, ou converter no ato, como no exemplo.
+###### Note: pode-se converter de object para date depois, ou converter no ato, como no exemplo.
 
 #### Ex3: criando variável contendo uma lista
 ~~~Python
 col_creat = ['meu_nome', 'Idade', 'Data_de_Nascimento']
 ~~~
-###### cria a lista ... e armazena ela na variável col_creat.
+###### Note: cria a lista ... e armazena ela na variável col_creat.
 
 ~~~Python
 print(data[['id','date', 'meu_nome', 'Idade', 'Data_de_Nascimento']].head())
@@ -134,7 +134,7 @@ print(data.columns)
 
 ### 2. Deletar
 
-###### utiliza-se "drop" para apagar. Essa função exige um eixo (axis), que significa apagar em direção às colunas, ou em direção às linhas.
+##### utiliza-se "drop" para apagar. Essa função exige um eixo (axis), que significa apagar em direção às colunas, ou em direção às linhas.
 
 #### Ex:
 ~~~Python
@@ -144,6 +144,7 @@ print(data.columns)
 data = data.drop(['meu_nome', 'Idade', 'Data_de_Nascimento'], axis=1)
 ~~~
 ###### Note: é necessário atribuir novamente o valor à variável data, após apagar as colunas, por isso o "data =" no começo. Também é possível atribuir a uma nova planilha "data2 =".
+
 #### PARA VISUALIZAÇÃO!
 ~~~Python
 print(data.columns)
@@ -172,7 +173,7 @@ print(data[cols])
 
 ### 3.2 Selecionar pelos índices (index) das linhas e das colunas
 
-###### forma -> iloc[intervalo de linhas, intervalo de colunas]
+##### Forma -> iloc[intervalo de linhas, intervalo de colunas]
 
 #### Ex:
 ~~~Python
@@ -181,14 +182,14 @@ print(data.iloc[0:5, 0:3])
 
 ### 3.3 Selecionar pelos índices das linhas e pelo nome das colunas
 
-##### forma -> loc[intervalo de linhas, nome da coluna/lista]
+##### Forma -> loc[intervalo de linhas, nome da coluna/lista]
 
-### Ex:
+#### Ex:
 ~~~Python
 print(data.loc[0:4, ['id','price', 'bedrooms']])
 ~~~
 
-### ou
+#### ou
 
 ~~~Python
 cols = ['id','price', 'bedrooms']
@@ -199,9 +200,9 @@ print(data.loc[0:4, cols])
 
 ### 3.4 Selecionar pelos índices booleanos (True, False)
 
-###### forma -> precisa ser uma lista de True e False, na mesma quantidade de colunas.
+##### Forma -> precisa ser uma lista de True e False, na mesma quantidade de colunas.
 
-### Ex:
+#### Ex:
 ~~~Python
 cols = [True, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False ]
 ~~~
