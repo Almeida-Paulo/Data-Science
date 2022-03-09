@@ -1,6 +1,5 @@
-# ====================================//=====================================
 #                     Aula de python para Ciência de Dados
-# ===================================//======================================
+
 
 # Carregar o arquivo .csv (arquivo com os dados, em formato csv, planilha)
 from datetime import date # importações automáticas
