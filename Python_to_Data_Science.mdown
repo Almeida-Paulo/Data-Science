@@ -4,42 +4,42 @@
 ##                         Primeiros comandos úteis
 
 
-#### mostrar as 5 primeiras linhas da planilha
+#### Mostrar as 5 primeiras linhas da planilha
 ~~~Python
 print(data.head())
 ~~~
 
-#### mostrar a quantidade de linhas e colunas do arquivo
+#### Mostrar a quantidade de linhas e colunas do arquivo
 ~~~Python
 print(data.shape)
 ~~~
 
-#### mostrar o nome das colunas do arquivo
+#### Mostrar o nome das colunas do arquivo
 ~~~Python
 print(data.columns)
 ~~~
 
-#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price'
+#### Mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price'
 ~~~Python
 print(data[['id','price']].sort_values('price'))
 ~~~
 
-#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price' do maior ao menor
+#### Mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price' do maior ao menor
 ~~~Python
 print(data[['id','price']].sort_values('price', ascending=False))
 ~~~
 
-#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'bedrooms' do maior ao menor
+#### Mostrar o conjunto de dados do arquivo, ordenados pela coluna 'bedrooms' do maior ao menor
 ~~~Python
 print(data[['id','bedrooms']].sort_values('bedrooms', ascending=False))
 ~~~
 
-#### função que converte de "object" (string) para "date" (pois a pandas reconhece datas como objetos por padrão)
+#### Função que converte de "object" (string) para "date" (pois a pandas reconhece datas como objetos por padrão)
  ~~~Python
  data['date'] = pandas.to_datetime(data['date'])
 ~~~
 
-#### mostrar os tipos de variaveis em cada coluna
+#### Mostrar os tipos de variaveis em cada coluna
 ~~~Python
 print(data.dtypes)
 ~~~
