@@ -14,78 +14,73 @@ print(data.head())
 print(data.shape)
 ~~~
 
-
 #### mostrar o nome das colunas do arquivo
-
 ~~~Python
 print(data.columns)
 ~~~
 
 #### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price'
-
 ~~~Python
 print(data[['id','price']].sort_values('price'))
 ~~~
-#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price' do maior ao menor
 
+#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price' do maior ao menor
 ~~~Python
 print(data[['id','price']].sort_values('price', ascending=False))
 ~~~
-#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'bedrooms' do maior ao menor
 
+#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'bedrooms' do maior ao menor
 ~~~Python
 print(data[['id','bedrooms']].sort_values('bedrooms', ascending=False))
 ~~~
-#### função que converte de "object" (string) para "date" (pois a pandas reconhece datas como objetos por padrão)
 
+#### função que converte de "object" (string) para "date" (pois a pandas reconhece datas como objetos por padrão)
  ~~~Python
  data['date'] = pandas.to_datetime(data['date'])
 ~~~
-#### mostrar os tipos de variaveis em cada coluna
 
+#### mostrar os tipos de variaveis em cada coluna
 ~~~Python
 print(data.dtypes)
 ~~~
+
 
 ##                    Converter o tipo de uma variável
 
 
 #### 1. object -> date  (igual ao 6)
-
 ~~~Python
 data['date'] = data['date'].astype(datetime64)
 ~~~
 
 #### 2. integer -> float
-
 ~~~Python
 data['bedrooms'] = data['bedrooms'].astype(float)
 ~~~
 
-#### 3. float -> integer                                   ###### Note: int64 significa que os tipos das variáveis estão, e devem estar, em 64 bits. Caso seja 32 bits (int32, float32), todos devem ser em 32 bits, pois 64 e 32 não são comparáveis.
-
+#### 3. float -> integer                                   
 ~~~Python
 data['bedrooms'] = data['bedrooms'].astype(int64)
 ~~~
+###### Note: int64 significa que os tipos das variáveis estão, e devem estar, em 64 bits. Caso seja 32 bits (int32, float32), todos devem ser em 32 bits, pois 64 e 32 não são comparáveis.
 
-#### 4. integer -> string                                  ###### Note: strings são considerados obejcts.     
-
+#### 4. integer -> string                                       
 ~~~Python
 data['bedrooms'] = data['bedrooms'].astype(str)
 ~~~
+###### Note: strings são considerados obejcts.
 
 #### 5. string -> integer
-
 ~~~Python
 data['bedrooms'] = data['bedrooms'].astype(int64)
 ~~~
 
 #### 6. string -> date
-
 ~~~Python
 data['date'] = pandas.to_datetime(data['date'])
 ~~~
 
+#### PARA VISUALIZAÇÃO!
 ~~~Python
 print(data.dtypes)
 ~~~
@@ -101,71 +96,58 @@ print(data.head())
 #### utiliza-se o operador "=" (igual) para atribuir valor a uma variável.
 
 #### Ex: 
-
 ~~~Python
 data = pandas.read_csv ('Projeto_DS_1/datasets/kc_house_data.csv')
 ~~~
 ###### Leu o arquivo e guardou-o na variável "data".
 
 #### Ex2: criando colunas na planilha de dados do arquivo
-
 ~~~Python
 data['meu_nome'] = "Paulo"
 ~~~
-
 ~~~Python
 data['Idade'] = 27
 ~~~
-
-
 ~~~Python
 data['Data_de_Nascimento'] = pandas.to_datetime('1995-10-25')
 ~~~
 ###### pode-se converter de object para date depois, ou converter no ato, como no exemplo.
 
-
 #### Ex3: criando variável contendo uma lista
-
 ~~~Python
 col_creat = ['meu_nome', 'Idade', 'Data_de_Nascimento']
 ~~~
-###### cria a lista ... e armazena ela na variável col_creat
+###### cria a lista ... e armazena ela na variável col_creat.
 
 ~~~Python
 print(data[['id','date', 'meu_nome', 'Idade', 'Data_de_Nascimento']].head())
 ~~~
- ###### Note: mostra as colunas indicadas (id, date, meu_nome...)
+###### Note: mostra as colunas indicadas (id, date, meu_nome...)
 
+#### PARA VISUALIZAÇÃO!
 ~~~Python
 print(data.dtypes)
 ~~~
- 
 ~~~Python
 print(data.columns)
 ~~~
-###### APENAS PARA VISUALIZAÇÃO!!!!!
-
 
 ### 2. Deletar
 
-## utiliza-se "drop" para apagar. Essa função exige um eixo (axis), que significa apagar em direção às colunas, ou em direção às linhas.
+###### utiliza-se "drop" para apagar. Essa função exige um eixo (axis), que significa apagar em direção às colunas, ou em direção às linhas.
 
-### Ex:
+#### Ex:
 ~~~Python
 print(data.columns)
 ~~~
-
-
 ~~~Python
 data = data.drop(['meu_nome', 'Idade', 'Data_de_Nascimento'], axis=1)
 ~~~
 ###### Note: é necessário atribuir novamente o valor à variável data, após apagar as colunas, por isso o "data =" no começo. Também é possível atribuir a uma nova planilha "data2 =".
-
+#### PARA VISUALIZAÇÃO!
 ~~~Python
 print(data.columns)
 ~~~
-###### APENAS PARA VISUALIZAÇÃO!!!!!
-
 
 ### 3. Selecionar
 
@@ -179,59 +161,50 @@ print(data[['id','price', 'bedrooms']])
 
 #### ou
 
+#### criar variável com lista antes.
 ~~~Python
 cols = ['id','price', 'bedrooms']
 ~~~
-###### criar variável com lista antes.
- 
+#### selecionar a lista.
 ~~~Python
 print(data[cols])
 ~~~
-###### selecionar a lista.
 
-#____________________________________________________________________________
 ### 3.2 Selecionar pelos índices (index) das linhas e das colunas
 
-### forma -> iloc[intervalo de linhas, intervalo de colunas]
+###### forma -> iloc[intervalo de linhas, intervalo de colunas]
 
-### Ex:
+#### Ex:
 ~~~Python
 print(data.iloc[0:5, 0:3])
 ~~~
 
-
-#____________________________________________________________________________
 ### 3.3 Selecionar pelos índices das linhas e pelo nome das colunas
 
-### forma -> loc[intervalo de linhas, nome da coluna/lista]
+##### forma -> loc[intervalo de linhas, nome da coluna/lista]
 
 ### Ex:
 ~~~Python
 print(data.loc[0:4, ['id','price', 'bedrooms']])
 ~~~
 
-
 ### ou
 
 ~~~Python
 cols = ['id','price', 'bedrooms']
 ~~~
-
 ~~~Python
 print(data.loc[0:4, cols])
 ~~~
 
-
-#____________________________________________________________________________
 ### 3.4 Selecionar pelos índices booleanos (True, False)
 
-### forma -> precisa ser uma lista de True e False, na mesma quantidade de colunas.
+###### forma -> precisa ser uma lista de True e False, na mesma quantidade de colunas.
 
 ### Ex:
 ~~~Python
 cols = [True, False, True, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False ]
 ~~~
-
 ~~~Python
 print(data.loc[0:4, cols])
 ~~~
