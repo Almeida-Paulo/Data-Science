@@ -1,39 +1,38 @@
 #                     Aula de Python para Ciência de Dados
 
 
-##                         Primeiros comandos úteis
+###                         Primeiros comandos úteis
 
 
-### mostrar as 5 primeiras linhas da planilha
+#### mostrar as 5 primeiras linhas da planilha
 ~~~Python
 print(data.head())
 ~~~
 
-### mostrar a quantidade de linhas e colunas do arquivo
+#### mostrar a quantidade de linhas e colunas do arquivo
 #print(data.shape)
 
-### mostrar o nome das colunas do arquivo
+#### mostrar o nome das colunas do arquivo
 #print(data.columns)
 
-# mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price'
+#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price'
 #print(data[['id','price']].sort_values('price'))
 
-# mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price' do maior ao menor
+#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price' do maior ao menor
 #print(data[['id','price']].sort_values('price', ascending=False))
 
-# mostrar o conjunto de dados do arquivo, ordenados pela coluna 'bedrooms' do maior ao menor
+#### mostrar o conjunto de dados do arquivo, ordenados pela coluna 'bedrooms' do maior ao menor
 #print(data[['id','bedrooms']].sort_values('bedrooms', ascending=False))
 
-# função que converte de "object" (string) para "date" (pois a pandas reconhece datas como objetos por padrão)
+#### função que converte de "object" (string) para "date" (pois a pandas reconhece datas como objetos por padrão)
 #data['date'] = pandas.to_datetime(data['date'])
  
-# mostrar os tipos de variaveis em cada coluna
+#### mostrar os tipos de variaveis em cada coluna
 #print(data.dtypes)
 
 
-# ====================================//=====================================
-#                     Converter o tipo de uma variável
-# ===================================//======================================
+###                    Converter o tipo de uma variável
+
 
 # 1. object -> date  (igual ao 6)
 #data['date'] = data['date'].astype(datetime64)
