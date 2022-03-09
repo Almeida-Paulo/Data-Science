@@ -93,7 +93,7 @@ print(data.head())
 
 ### 1. Criar
 
-##### utiliza-se o operador "=" (igual) para atribuir valor a uma variável.
+##### Utiliza-se o operador "=" (igual) para atribuir valor a uma variável.
 
 #### Ex: 
 ~~~Python
@@ -134,7 +134,7 @@ print(data.columns)
 
 ### 2. Deletar
 
-##### utiliza-se "drop" para apagar. Essa função exige um eixo (axis), que significa apagar em direção às colunas, ou em direção às linhas.
+##### Utiliza-se "drop" para apagar. Essa função exige um eixo (axis), que significa apagar em direção às colunas, ou em direção às linhas.
 
 #### Ex:
 ~~~Python
