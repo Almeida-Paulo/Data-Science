@@ -1,7 +1,7 @@
 #                     Aula de Python para Ciência de Dados
 
 
-###                         Primeiros comandos úteis
+##                         Primeiros comandos úteis
 
 
 #### mostrar as 5 primeiras linhas da planilha
@@ -31,7 +31,7 @@ print(data.head())
 #print(data.dtypes)
 
 
-###                    Converter o tipo de uma variável
+##                    Converter o tipo de uma variável
 
 
 # 1. object -> date  (igual ao 6)
@@ -56,25 +56,25 @@ print(data.head())
 
 #print(data.head())
 
-# ====================================//=====================================
-#                          Manipulando variáveis 
-# ===================================//======================================
 
-# 1. Criar
+##                          Manipulando variáveis 
 
-## utiliza-se o operador "=" (igual) para atribuir valor a uma variável.
 
-### Ex: 
+### 1. Criar
+
+#### utiliza-se o operador "=" (igual) para atribuir valor a uma variável.
+
+#### Ex: 
 #data = pandas.read_csv ('Projeto_DS_1/datasets/kc_house_data.csv') ###### Leu o arquivo e guardou-o na variável "data".
 
 
-### Ex2: criando colunas na planilha de dados do arquivo
+#### Ex2: criando colunas na planilha de dados do arquivo
 #data['meu_nome'] = "Paulo"
 #data['Idade'] = 27
 #data['Data_de_Nascimento'] = pandas.to_datetime('1995-10-25') ###### pode-se converter de object para date depois, ou converter no ato, como no exemplo.
 
 
-### Ex3: criando variável contendo uma lista
+#### Ex3: criando variável contendo uma lista
 # col_creat = ['meu_nome', 'Idade', 'Data_de_Nascimento'] ###### cria a lista ... e armazena ela na variável col_creat
 
 #print(data[['id','date', 'meu_nome', 'Idade', 'Data_de_Nascimento']].head()) ###### Note: mostra as colunas indicadas (id, date, meu_nome...)
@@ -84,7 +84,7 @@ print(data.head())
 
 # ===================================//======================================
 
-# 2. Deletar
+### 2. Deletar
 
 ## utiliza-se "drop" para apagar. Essa função exige um eixo (axis), que significa apagar em direção às colunas, ou em direção às linhas.
 
@@ -98,7 +98,7 @@ print(data.head())
 
 # ===================================//======================================
 
-# 3. Selecionar
+### 3. Selecionar
 
 # 3.1 Selecionar pelo nome das colunas
 
