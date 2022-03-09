@@ -1,25 +1,18 @@
 #                     Aula de Python para Ciência de Dados
 
 
-## Carregar o arquivo .csv (arquivo com os dados, em formato csv, planilha)
-
-from datetime import date # importações automáticas
-from numpy import datetime64, dtype # VScode importa funções automaticamente
-import pandas #importando a biblioteca pandas
-data = pandas.read_csv ('Projeto_DS_1/datasets/kc_house_data.csv') # lê o arquivo com o comando read da pandas e guarda na variável data.
+##                         Primeiros comandos úteis
 
 
-# ====================================//=====================================
-#                          Primeiros comandos úteis
-# ===================================//======================================
+### mostrar as 5 primeiras linhas da planilha
+~~~Python
+print(data.head())
+~~~
 
-# mostrar as 5 primeiras linhas da planilha
-#print(data.head())
-
-# mostrar a quantidade de linhas e colunas do arquivo
+### mostrar a quantidade de linhas e colunas do arquivo
 #print(data.shape)
 
-# mostrar o nome das colunas do arquivo
+### mostrar o nome das colunas do arquivo
 #print(data.columns)
 
 # mostrar o conjunto de dados do arquivo, ordenados pela coluna 'price'
