@@ -1,7 +1,8 @@
-#                     Aula de python para Ciência de Dados
+#                     Aula de Python para Ciência de Dados
 
 
-# Carregar o arquivo .csv (arquivo com os dados, em formato csv, planilha)
+## Carregar o arquivo .csv (arquivo com os dados, em formato csv, planilha)
+
 from datetime import date # importações automáticas
 from numpy import datetime64, dtype # VScode importa funções automaticamente
 import pandas #importando a biblioteca pandas
