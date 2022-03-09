@@ -50,38 +50,38 @@ print(data.dtypes)
 ##                    Converter o tipo de uma variável
 
 
-# 1. object -> date  (igual ao 6)
+#### 1. object -> date  (igual ao 6)
 
 ~~~Python
 data['date'] = data['date'].astype(datetime64)
 ~~~
 
-# 2. integer -> float
+#### 2. integer -> float
 
 ~~~Python
 data['bedrooms'] = data['bedrooms'].astype(float)
 ~~~
 
-# 3. float -> integer                                   ###### Note: int64 significa que os tipos das variáveis estão, e devem estar, em 64 bits. Caso seja 32 bits (int32, float32), todos devem ser em 32 bits, pois 64 e 32 não são comparáveis.
+#### 3. float -> integer                                   ###### Note: int64 significa que os tipos das variáveis estão, e devem estar, em 64 bits. Caso seja 32 bits (int32, float32), todos devem ser em 32 bits, pois 64 e 32 não são comparáveis.
 
 ~~~Python
 data['bedrooms'] = data['bedrooms'].astype(int64)
 ~~~
 
-# 4. integer -> string                                  ###### Note: strings são considerados obejcts.     
+#### 4. integer -> string                                  ###### Note: strings são considerados obejcts.     
 
 ~~~Python
 data['bedrooms'] = data['bedrooms'].astype(str)
 ~~~
 
-# 5. string -> integer
-#
+#### 5. string -> integer
+
 ~~~Python
 data['bedrooms'] = data['bedrooms'].astype(int64)
 ~~~
 
-# 6. string -> date
-#
+#### 6. string -> date
+
 ~~~Python
 data['date'] = pandas.to_datetime(data['date'])
 ~~~
