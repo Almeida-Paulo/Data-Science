@@ -1,4 +1,4 @@
-#                     Aula de Python para Ciência de Dados
+#                     <p align="center">Aula de Python para Ciência de Dados</p>
 
 
 ##                         Primeiros comandos úteis
