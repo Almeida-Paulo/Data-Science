@@ -1,0 +1,9 @@
+# <p align="center">Dashboards</p>
+
+## Power BI
+
+[![Image](https://github.com/favicon.ico)](https://app.powerbi.com/view?r=eyJrIjoiMjY3YzU3MmQtMjVkMC00YzIzLTkzYzMtYWViMzgzZThiNmQ5IiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9)
+
+
+[![Image](https://github.com/favicon.ico)](https://app.powerbi.com/view?r=eyJrIjoiYjIwZWM3OTYtY2JlYS00NWY5LWI0YjgtZjY3MWU1MTNhNTlhIiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9)
+
