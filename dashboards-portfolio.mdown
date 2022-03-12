@@ -2,10 +2,7 @@
 
 ## Power BI
 
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMjY3YzU3MmQtMjVkMC00YzIzLTkzYzMtYWViMzgzZThiNmQ5IiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9"><img src="images/Imagem1.png" align="left" height="420" width="600" ></a>
 
-
-<img src="images/Imagem1.png" alt="drawing" width="200"/>(https://app.powerbi.com/view?r=eyJrIjoiMjY3YzU3MmQtMjVkMC00YzIzLTkzYzMtYWViMzgzZThiNmQ5IiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9)
-
-[![Image](images/Imagem2.png)](https://app.powerbi.com/view?r=eyJrIjoiYjIwZWM3OTYtY2JlYS00NWY5LWI0YjgtZjY3MWU1MTNhNTlhIiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9)
 
 <a href="https://app.powerbi.com/view?r=eyJrIjoiYjIwZWM3OTYtY2JlYS00NWY5LWI0YjgtZjY3MWU1MTNhNTlhIiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9"><img src="images/Imagem2.png" align="left" height="420" width="600" ></a>
