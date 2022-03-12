@@ -2,7 +2,7 @@
 
 ## Power BI
 
-[![Image](images/Imagem1.png =250x)](https://app.powerbi.com/view?r=eyJrIjoiMjY3YzU3MmQtMjVkMC00YzIzLTkzYzMtYWViMzgzZThiNmQ5IiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9)
+[![Image](images/Imagem1.png =250x250)](https://app.powerbi.com/view?r=eyJrIjoiMjY3YzU3MmQtMjVkMC00YzIzLTkzYzMtYWViMzgzZThiNmQ5IiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9)
 
 [![Image](images/Imagem2.png)](https://app.powerbi.com/view?r=eyJrIjoiYjIwZWM3OTYtY2JlYS00NWY5LWI0YjgtZjY3MWU1MTNhNTlhIiwidCI6ImQ4NjQxYWFkLTljYjEtNDgwMy05M2Y1LWEzZjMxMzNmMTNkMSJ9)
 
